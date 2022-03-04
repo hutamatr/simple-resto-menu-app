@@ -18,7 +18,7 @@ const Main = () => {
 
   return (
     <main>
-      <section className="container">
+      <section className="container md:hidden">
         <ul className="flex flex-col gap-y-16 my-16 px-12">{menus}</ul>
       </section>
     </main>

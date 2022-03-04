@@ -3,7 +3,7 @@ import React from "react";
 const Header = () => {
   return (
     <header>
-      <section className="container flex flex-col gap-y-5 mt-8 justify-center px-6">
+      <section className="container flex flex-col gap-y-5 mt-8 justify-center px-6 md:mx-auto md:mb-6">
         <h1 className="text-center font-bold text-white text-4xl font-noto">
           Our Top Menu
         </h1>
