@@ -24,13 +24,13 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot 1]()
+![Screenshot 1](https://github.com/hutamatr/simple-resto-menu-app/blob/main/src/assets/mobile.png)
 
-![Screenshot 2]()
+![Screenshot 2](https://github.com/hutamatr/simple-resto-menu-app/blob/main/src/assets/dekstop.png)
 
 ### Links
 
-- Live Site URL: [Demo]()
+- Live Site URL: [Demo](https://resto-menu.netlify.app)
 
 ## My process
 
@@ -47,6 +47,6 @@ Users should be able to:
 
 ## Author
 
-- LinkedIn - [Hutama Trirahmanto] (https://www.linkedin.com/in/hutama-trirahmanto/)
+- LinkedIn - [HutamaTrirahmanto](https://www.linkedin.com/in/hutama-trirahmanto/)
 - Twitter - [@huutamatr](https://twitter.com/huutamatr)
 - Frontend Mentor - [@hutamatr](https://www.frontendmentor.io/profile/hutamatr)
