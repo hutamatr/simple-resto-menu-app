@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper";
 import "swiper/css";
@@ -7,18 +7,22 @@ import "swiper/css/navigation";
 
 import MenuData from "../menu-data/MenuData";
 
-const MainSwiper = () => {
+const MainSwiper = ({ className }) => {
   const menus = MenuData.map((menu) => {
     return (
-      <li key={menu.id} className="">
-        <SwiperSlide className="text-white flex flex-col gap-y-4 justify-center items-center md:py-8 md:px-28 lg:px-96">
+      <li key={menu.id}>
+        <SwiperSlide className="text-white flex flex-col gap-y-4 justify-center items-center md:py-8">
           <img
             src={menu.image}
             alt={`menu-${menu.id}`}
-            className="md:max-w-md"
+            className="md:w-60 lg:max-w-xs"
           />
-          <h2 className="font-noto font-semibold text-2xl">{menu.name}</h2>
-          <p className="text-center text-gray-400 text-lg">{menu.desc}</p>
+          <h2 className="font-noto font-semibold text-xl text-center">
+            {menu.name}
+          </h2>
+          <p className="text-center text-gray-400 md:text-sm lg:text-base">
+            {menu.desc}
+          </p>
           <div className="text-2xl font-light ">$ {menu.price}</div>
         </SwiperSlide>
       </li>
@@ -26,8 +30,9 @@ const MainSwiper = () => {
   });
 
   return (
-    <Fragment>
+    <section className="container mx-auto lg:px-24 md:px-10 mb-12">
       <Swiper
+        slidesPerView={3}
         centeredSlides={true}
         spaceBetween={30}
         loop={true}
@@ -40,13 +45,11 @@ const MainSwiper = () => {
           clickable: true,
         }}
         modules={[Autoplay, Pagination, Navigation]}
-        className={
-          "hidden md:block md:mx-auto md:mb-48 lg:mb-12 md:mt-20 lg:mt-4"
-        }
+        className={className}
       >
         <ul>{menus}</ul>
       </Swiper>
-    </Fragment>
+    </section>
   );
 };
 

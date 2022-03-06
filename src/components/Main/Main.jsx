@@ -1,5 +1,6 @@
 import React from "react";
 import MenuData from "../menu-data/MenuData";
+import MainSwiper from "./MainSwiper";
 
 const Main = () => {
   const menus = MenuData.map((menu) => {
@@ -18,6 +19,7 @@ const Main = () => {
 
   return (
     <main>
+      <MainSwiper className={"hidden md:block md:mx-auto"} />
       <section className="container md:hidden">
         <ul className="flex flex-col gap-y-16 my-16 px-12">{menus}</ul>
       </section>
