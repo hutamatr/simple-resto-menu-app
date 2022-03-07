@@ -15,7 +15,7 @@ const MainSwiper = ({ className }) => {
           <img
             src={menu.image}
             alt={`menu-${menu.id}`}
-            className="md:w-60 lg:max-w-xs"
+            className="md:w-60 lg:max-w-xs hover:scale-110 hover:rotate-12 hover:duration-500"
           />
           <h2 className="font-noto font-semibold text-xl text-center">
             {menu.name}
@@ -34,11 +34,11 @@ const MainSwiper = ({ className }) => {
       <Swiper
         slidesPerView={3}
         centeredSlides={true}
-        spaceBetween={30}
+        spaceBetween={40}
         loop={true}
         navigation={false}
         autoplay={{
-          delay: 2500,
+          delay: 4000,
           disableOnInteraction: false,
         }}
         pagination={{
