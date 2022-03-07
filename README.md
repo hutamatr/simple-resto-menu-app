@@ -1,6 +1,6 @@
 # Simple Resto Menu App
 
-Simple Resto Menu App - Challenge from Waveast - [Link](https://azhariemuhammad.notion.site/1-Resto-app-df14ffa3b0e34469a71d8ee3f7f83a6c) Discrod Group
+Simple Resto Menu App - Challenge from [Waveast](https://azhariemuhammad.notion.site/1-Resto-app-df14ffa3b0e34469a71d8ee3f7f83a6c)
 
 ## Table of contents
 
